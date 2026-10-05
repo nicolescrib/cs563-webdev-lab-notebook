@@ -8,7 +8,50 @@
   </head>
   <body>
     <main>
-      <!-- Add your code here -->
+      <h1>Roth IRA Calculator</h1>
+      <form action="/submit">
+        <div>
+          <label for="balance">Balance ($)<br></label>
+          <input type="text" name="balance" />
+        </div>
+        <br>
+        <div>
+          <label for="annual contribution">Annual contribution (4)<br></r></label>
+          <input type="text" name="annual contribution" />
+        </div>
+        <br>
+        <fieldset style="padding: 0px; border-width: 0px;">
+          <legend>Maximize contributions?</legend>
+          <input type="radio" id="yes" name="yes" value="yes" />
+          <label for="yes">Yes</label>
+          <input type="radio" id="no" name="no" value="no" />
+          <label for="no">No</label>
+        </fieldset>
+        <br>
+        <div>
+          <label for="rateofreturn">Expected rate of return (5)<br></label>
+          <input type="number" name="rateofreturn" />
+        </div>
+        <br>
+        <div>
+          <label for="currentage">Current age<br></label>
+          <input type="number" name="currentage" />
+        </div>
+        <br>
+        <div>
+          <label for="retirementage">Retirement age<br></label>
+          <input type="number" name="retirementage" />
+        </div>
+        <br>
+        <div>
+          <label for="taxrate">Marginal tax rate (%)<br></label>
+          <input type="number" name="taxrate" />
+        </div>
+        <br>
+        <input type="submit" value="Calculate" />
+        <input type="reset" value="Reset" />
+      </form>
+      <p>This exercise is a simplified version of the Roth IRA Calculator at <a href="calculator.net">Calculator.net</a></a></p>
     </main>
   </body>
 </html>
