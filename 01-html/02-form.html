@@ -11,47 +11,54 @@
       <h1>Roth IRA Calculator</h1>
       <form action="/submit">
         <div>
-          <label for="balance">Balance ($)<br></label>
-          <input type="text" name="balance" />
+          <label for="balance">Balance ($)<br /></label>
+          <input type="text" name="balance" id="balance" />
         </div>
-        <br>
+        <br />
         <div>
-          <label for="annual contribution">Annual contribution (4)<br></r></label>
-          <input type="text" name="annual contribution" />
+          <label for="annualcontribution">Annual contribution (4)<br /></label>
+          <input
+            type="text"
+            name="annualcontribution"
+            id="annualcontribution"
+          />
         </div>
-        <br>
-        <fieldset style="padding: 0px; border-width: 0px;">
+        <br />
+        <fieldset style="padding: 0px; border-width: 0px">
           <legend>Maximize contributions?</legend>
-          <input type="radio" id="yes" name="yes" value="yes" />
+          <input type="radio" id="yes" name="maximize" value="yes" />
           <label for="yes">Yes</label>
-          <input type="radio" id="no" name="no" value="no" />
+          <input type="radio" id="no" name="maximize" value="no" />
           <label for="no">No</label>
         </fieldset>
-        <br>
+        <br />
         <div>
-          <label for="rateofreturn">Expected rate of return (5)<br></label>
-          <input type="number" name="rateofreturn" />
+          <label for="rateofreturn">Expected rate of return (5)<br /></label>
+          <input type="number" name="rateofreturn" id="rateofreturn" />
         </div>
-        <br>
+        <br />
         <div>
-          <label for="currentage">Current age<br></label>
-          <input type="number" name="currentage" />
+          <label for="currentage">Current age<br /></label>
+          <input type="number" name="currentage" id="currentage" />
         </div>
-        <br>
+        <br />
         <div>
-          <label for="retirementage">Retirement age<br></label>
-          <input type="number" name="retirementage" />
+          <label for="retirementage">Retirement age<br /></label>
+          <input type="number" name="retirementage" id="retirementage" />
         </div>
-        <br>
+        <br />
         <div>
-          <label for="taxrate">Marginal tax rate (%)<br></label>
-          <input type="number" name="taxrate" />
+          <label for="taxrate">Marginal tax rate (%)<br /></label>
+          <input type="number" name="taxrate" id="taxrate" />
         </div>
-        <br>
+        <br />
         <input type="submit" value="Calculate" />
         <input type="reset" value="Reset" />
       </form>
-      <p>This exercise is a simplified version of the Roth IRA Calculator at <a href="calculator.net">Calculator.net</a></a></p>
+      <p>
+        This exercise is a simplified version of the Roth IRA Calculator at
+        <a href="https://www.calculator.net">Calculator.net</a>
+      </p>
     </main>
   </body>
 </html>
