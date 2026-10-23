@@ -1,1 +1,22 @@
-/* Add your CSS code here  */
+@import url(https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&display=swap);
+
+:root {
+  --ice-blue-juvie: #8fbcd4;
+  --gothic-gray-blue: #6f8796;
+  --dark-slate-infinity: #1f2a33;
+  --midnight-blue: #161678;
+}
+
+nav {
+    font-family: 'Cinzel';
+    color: var(--gothic-gray-blue);
+    background-color: var(--dark-slate-infinity);
+}
+
+nav a {
+    color: var(--ice-blue-juvie)
+}
+
+nav li {
+    display: inline-block;
+}
