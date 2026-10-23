@@ -7,16 +7,75 @@
   --midnight-blue: #161678;
 }
 
-nav {
-    font-family: 'Cinzel';
-    color: var(--gothic-gray-blue);
-    background-color: var(--dark-slate-infinity);
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
 }
 
-nav a {
-    color: var(--ice-blue-juvie)
+/* Navigation Styles */
+.nav {
+  background-color: var(--dark-slate-infinity);
 }
 
-nav li {
-    display: inline-block;
+.nav-list {
+  margin: 0;
+  padding: 1rem;
+  padding-left: 0;
+  text-align: center;
+  list-style: none;
+}
+
+.nav-item {
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+.nav-link {
+  padding: 0.3rem 0.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--ice-blue-juvie);
+  transition:
+    background 0.2s,
+    color 0.2s;
+}
+
+.nav-link:hover {
+  background-color: var(--ice-blue-juvie);
+  color: var(--dark-slate-infinity);
+}
+
+/* Main Area Styles */
+.books-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.main-heading {
+  color: var(--gothic-gray-blue);
+  text-align: center;
+  margin: 3rem;
+}
+
+.font-cinzel {
+  font-family: "Cinzel";
+}
+
+/* Section Styles */
+h2 {
+    border-bottom: 2px solidi #ccc;
+}
+
+/* Table Styles */
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+table td,
+table th {
+  padding: 6px;
+  border: 1px solid black;
 }
