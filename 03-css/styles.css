@@ -1,15 +1,23 @@
 @import url(https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&display=swap);
 
 :root {
+  --background-color: #f7f7f7;
+  --text-color: #333333;
   --ice-blue-juvie: #8fbcd4;
   --gothic-gray-blue: #6f8796;
   --dark-slate-infinity: #1f2a33;
   --midnight-blue: #161678;
+  --gray-border: #cccccc;
+  --table-emphasis-background: #e9e8e8;
+  --table-background: #f4f4f4;
 }
 
 body {
   font-family: Arial, sans-serif;
   margin: 0;
+  background-color: var(--background-color)
+  color: var(--text-color);
+  line-height: 1.6;
 }
 
 /* Navigation Styles */
@@ -48,15 +56,16 @@ body {
 
 /* Main Area Styles */
 .books-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  padding: 0 1rem;
 }
 
 .main-heading {
+  margin: 2rem;
   color: var(--gothic-gray-blue);
   text-align: center;
-  margin: 3rem;
 }
 
 .font-cinzel {
@@ -64,18 +73,54 @@ body {
 }
 
 /* Section Styles */
-h2 {
-    border-bottom: 2px solidi #ccc;
+.h2 {
+  border-bottom: 2px solid var(--gray-border);
+}
+
+/* List Styles */
+.books-list li {
+  margin-bottom: 0.5rem;
+}
+
+/* ol as a child of li -- nested list */
+.books-list li > ol {
+  margin-top: 0.4rem;
+}
+
+/* Images Styles */
+.images-container {
+  text-align: center;
+}
+
+.book-image {
+  border-radius: 6px;
+  transition: transform 0.2s ease;
+}
+
+.book-image:hover {
+  transform: scale(1.1);
 }
 
 /* Table Styles */
-table {
-  border: 1px solid black;
+.table {
   border-collapse: collapse;
 }
+.table th,
+.table td {
+  border: 1px solid var(--gray-border);
+  padding: 1.5rem;
+  text-align: center;
+}
 
-table td,
-table th {
-  padding: 6px;
-  border: 1px solid black;
+.table tr:nth-child(even) {
+  background-color: var(--table-background);
+}
+
+.table-heading {
+  background-color: var(--table-emphasis-background)
+}
+
+.table-footer td {
+  font-weight: bold;
+  background-color: var(--table-emphasis-background);
 }
