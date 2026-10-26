@@ -7,56 +7,73 @@
     <title>CSS Exercise 02 - Form</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
-    <main>
-      <h1>Roth IRA Calculator</h1>
-      <form action="/submit">
-        <div>
-          <label for="balance">Balance ($)<br /></label>
-          <input type="text" name="balance" id="balance" />
+  <body class="color-bg-blue">
+    <main class="form-container">
+      <h1 class="main-heading-form">Roth IRA Calculator</h1>
+      <form class="ira-form" action="/submit">
+        <div class="form-element">
+          <label class="form-label" for="balance">Balance ($)</label>
+          <input class="form-input" type="text" name="balance" id="balance" />
         </div>
-        <br />
-        <div>
-          <label for="annualcontribution">Annual contribution (4)<br /></label>
+        <div class="form-element">
+          <label class="form-label" for="annualcontribution"
+            >Annual contribution ($)</label
+          >
           <input
+            class="form-input"
             type="text"
             name="annualcontribution"
             id="annualcontribution"
           />
         </div>
-        <br />
-        <fieldset style="padding: 0px; border-width: 0px">
+        <fieldset>
           <legend>Maximize contributions?</legend>
-          <input type="radio" id="yes" name="maximize" value="yes" />
-          <label for="yes">Yes</label>
-          <input type="radio" id="no" name="maximize" value="no" />
-          <label for="no">No</label>
+          <div class="form-radios">
+            <input type="radio" id="yes" name="maximize" value="yes" />
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="maximize" value="no" />
+            <label for="no">No</label>
+          </div>
         </fieldset>
-        <br />
-        <div>
-          <label for="rateofreturn">Expected rate of return (5)<br /></label>
-          <input type="number" name="rateofreturn" id="rateofreturn" />
+        <div class="form-element">
+          <label class="form-label" for="rateofreturn"
+            >Expected rate of return (%)</label
+          >
+          <input
+            class="form-input"
+            type="number"
+            name="rateofreturn"
+            id="rateofreturn"
+          />
         </div>
-        <br />
-        <div>
-          <label for="currentage">Current age<br /></label>
-          <input type="number" name="currentage" id="currentage" />
+        <div class="form-element">
+          <label class="form-label" for="currentage">Current age</label>
+          <input
+            class="form-input"
+            type="number"
+            name="currentage"
+            id="currentage"
+          />
         </div>
-        <br />
-        <div>
-          <label for="retirementage">Retirement age<br /></label>
-          <input type="number" name="retirementage" id="retirementage" />
+        <div class="form-element">
+          <label class="form-label" for="retirementage">Retirement age</label>
+          <input
+            class="form-input"
+            type="number"
+            name="retirementage"
+            id="retirementage"
+          />
         </div>
-        <br />
-        <div>
-          <label for="taxrate">Marginal tax rate (%)<br /></label>
-          <input type="number" name="taxrate" id="taxrate" />
+        <div class="form-element">
+          <label class="form-label" for="taxrate">Marginal tax rate (%)</label>
+          <input class="form-input" type="number" name="taxrate" id="taxrate" />
         </div>
-        <br />
-        <input type="submit" value="Calculate" />
-        <input type="reset" value="Reset" />
+        <div class="form-element">
+          <input class="btn btn-submit" type="submit" value="Calculate" />
+          <input class="btn btn-reset" type="reset" value="Reset" />
+        </div>
       </form>
-      <p>
+      <p class="form-note">
         This exercise is a simplified version of the Roth IRA Calculator at
         <a href="https://www.calculator.net">Calculator.net</a>
       </p>
